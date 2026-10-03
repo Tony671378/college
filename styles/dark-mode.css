@@ -1,0 +1,280 @@
+/* ═══════════════════════════════════════════════════
+   CAMPUSFIND DARK MODE
+   Complete dark theme overrides
+   ═══════════════════════════════════════════════════ */
+
+[data-theme="dark"] {
+    /* ── Override theme variables ── */
+    --bg-primary:       #0F172A;
+    --bg-secondary:     #1E293B;
+    --bg-card:          #1E293B;
+    --text-primary:     #F8FAFC;
+    --text-secondary:   #CBD5E1;
+    --text-muted:       #64748B;
+    --border-color:     rgba(255,255,255,0.08);
+    --border-subtle:    rgba(255,255,255,0.12);
+    --input-bg:         #1E293B;
+
+    --light-mist:       #1E293B;
+    --snow:             #0F172A;
+    --pure-white:       #1E293B;
+    --slate-200:        rgba(255,255,255,0.1);
+    --slate-300:        rgba(255,255,255,0.15);
+
+    --shadow-xs:   0 1px 2px rgba(0,0,0,0.2);
+    --shadow-sm:   0 2px 8px rgba(0,0,0,0.25);
+    --shadow-md:   0 4px 16px rgba(0,0,0,0.35);
+    --shadow-lg:   0 8px 32px rgba(0,0,0,0.4);
+    --shadow-xl:   0 16px 48px rgba(0,0,0,0.5);
+    --shadow-card: 0 2px 12px rgba(0,0,0,0.2);
+    --shadow-blue: 0 4px 20px rgba(37,99,235,0.3);
+
+    /* Badge adjustments */
+    --badge-verified-bg: rgba(16,185,129,0.15);
+    --badge-ranking-bg:  rgba(37,99,235,0.15);
+    --badge-deadline-bg: rgba(239,68,68,0.15);
+    --badge-trending-bg: rgba(249,115,22,0.15);
+    --badge-new-bg:      rgba(124,58,237,0.15);
+    --badge-gold-bg:     rgba(245,158,11,0.15);
+
+    /* Gradient adjustments for dark */
+    --gradient-card:  linear-gradient(135deg, rgba(37,99,235,0.06), rgba(124,58,237,0.06));
+    --gradient-warm:  linear-gradient(135deg, rgba(249,115,22,0.06), rgba(245,158,11,0.06));
+}
+
+/* ── Dark mode specific overrides ── */
+[data-theme="dark"] .login-card {
+    background: var(--bg-secondary);
+}
+
+[data-theme="dark"] .google-btn {
+    background: #1E293B;
+    border-color: rgba(255,255,255,0.12);
+    color: var(--text-primary);
+}
+[data-theme="dark"] .google-btn:hover {
+    background: #334155;
+}
+
+[data-theme="dark"] .apple-btn {
+    background: #F8FAFC;
+    color: #0F172A;
+}
+
+[data-theme="dark"] .social-btn svg {
+    filter: brightness(1.1);
+}
+
+[data-theme="dark"] .search-bar {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.1);
+}
+
+[data-theme="dark"] .filter-chip {
+    background: rgba(255,255,255,0.05);
+    color: #94A3B8;
+}
+[data-theme="dark"] .filter-chip.active {
+    background: rgba(37,99,235,0.15);
+    color: #60A5FA;
+    border-color: rgba(37,99,235,0.4);
+}
+
+[data-theme="dark"] .stream-icon {
+    background: rgba(255,255,255,0.06) !important;
+}
+
+[data-theme="dark"] .bottom-nav {
+    background: #1E293B;
+    border-top-color: rgba(255,255,255,0.06);
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .nav-item { color: #64748B; }
+[data-theme="dark"] .nav-item.active { color: #60A5FA; }
+
+[data-theme="dark"] .stat-pill {
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.08);
+}
+
+[data-theme="dark"] .tag {
+    background: rgba(255,255,255,0.06);
+    color: #94A3B8;
+}
+[data-theme="dark"] .tag-engineering { background: rgba(37,99,235,0.12); color: #60A5FA; }
+[data-theme="dark"] .tag-medical { background: rgba(16,185,129,0.12); color: #34D399; }
+[data-theme="dark"] .tag-law { background: rgba(124,58,237,0.12); color: #A78BFA; }
+[data-theme="dark"] .tag-management { background: rgba(245,158,11,0.12); color: #FBBF24; }
+[data-theme="dark"] .tag-top { background: rgba(245,158,11,0.12); color: #FBBF24; }
+
+[data-theme="dark"] .deadline-card {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.06);
+}
+[data-theme="dark"] .deadline-card.deadline-urgent {
+    background: rgba(239,68,68,0.06);
+    border-color: rgba(239,68,68,0.15);
+}
+
+[data-theme="dark"] .ranked-item:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+[data-theme="dark"] .course-card {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .fees-header-row {
+    background: rgba(255,255,255,0.04);
+}
+
+[data-theme="dark"] .recruiter-logo {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .review-summary {
+    background: rgba(255,255,255,0.03);
+}
+
+[data-theme="dark"] .rating-bar {
+    background: rgba(255,255,255,0.1);
+}
+[data-theme="dark"] .rating-bar-fill {
+    background: #60A5FA;
+}
+
+[data-theme="dark"] .review-card {
+    border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .gallery-item {
+    opacity: 0.85;
+}
+
+[data-theme="dark"] .detail-bottom-bar {
+    background: #1E293B;
+    border-top-color: rgba(255,255,255,0.06);
+    box-shadow: 0 -4px 16px rgba(0,0,0,0.3);
+}
+
+[data-theme="dark"] .compare-table th,
+[data-theme="dark"] .param-col {
+    background: #1E293B;
+}
+
+[data-theme="dark"] .collection-chip {
+    background: rgba(255,255,255,0.04);
+    border-color: rgba(255,255,255,0.1);
+}
+[data-theme="dark"] .collection-chip.active {
+    background: rgba(37,99,235,0.12);
+    border-color: rgba(37,99,235,0.3);
+    color: #60A5FA;
+}
+
+[data-theme="dark"] .tracker-card {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .pipeline-dot {
+    border-color: rgba(255,255,255,0.2);
+    background: #0F172A;
+}
+
+[data-theme="dark"] .activity-card {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.06);
+}
+[data-theme="dark"] .activity-value {
+    color: #60A5FA;
+}
+
+[data-theme="dark"] .settings-item:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+[data-theme="dark"] .notif-card.unread {
+    background: rgba(37,99,235,0.08);
+}
+[data-theme="dark"] .notif-card:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+[data-theme="dark"] .notif-urgent  { background: rgba(239,68,68,0.12); }
+[data-theme="dark"] .notif-info    { background: rgba(37,99,235,0.12); }
+[data-theme="dark"] .notif-alert   { background: rgba(245,158,11,0.12); }
+[data-theme="dark"] .notif-success { background: rgba(16,185,129,0.12); }
+[data-theme="dark"] .notif-new     { background: rgba(124,58,237,0.12); }
+
+[data-theme="dark"] .map-placeholder {
+    background: rgba(255,255,255,0.03);
+    border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .quick-stat {
+    background: rgba(255,255,255,0.04);
+}
+[data-theme="dark"] .quick-stat-value {
+    color: #60A5FA;
+}
+
+[data-theme="dark"] .sort-select {
+    background-color: #1E293B;
+    border-color: rgba(255,255,255,0.1);
+    color: #CBD5E1;
+}
+
+[data-theme="dark"] .view-toggle {
+    background: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .toast {
+    background: #F8FAFC;
+    color: #0F172A;
+}
+
+[data-theme="dark"] .bottom-sheet {
+    background: #1E293B;
+}
+
+[data-theme="dark"] .sheet-handle {
+    background: rgba(255,255,255,0.2);
+}
+
+[data-theme="dark"] .onboarding-screen {
+    background: #0F172A;
+}
+[data-theme="dark"] .slide-1-bg { background: linear-gradient(135deg, rgba(37,99,235,0.15), rgba(37,99,235,0.05)); }
+[data-theme="dark"] .slide-2-bg { background: linear-gradient(135deg, rgba(124,58,237,0.15), rgba(124,58,237,0.05)); }
+[data-theme="dark"] .slide-3-bg { background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(16,185,129,0.05)); }
+
+[data-theme="dark"] .scholarship-card,
+[data-theme="dark"] .exam-card {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.06);
+}
+
+[data-theme="dark"] .saved-card {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.06);
+}
+
+/* ── System preference auto-detection ── */
+@media (prefers-color-scheme: dark) {
+    [data-theme="auto"] {
+        /* Same overrides as [data-theme="dark"] */
+        --bg-primary:       #0F172A;
+        --bg-secondary:     #1E293B;
+        --bg-card:          #1E293B;
+        --text-primary:     #F8FAFC;
+        --text-secondary:   #CBD5E1;
+        --text-muted:       #64748B;
+        --border-color:     rgba(255,255,255,0.08);
+        --border-subtle:    rgba(255,255,255,0.12);
+        --input-bg:         #1E293B;
+    }
+}
